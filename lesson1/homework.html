@@ -137,26 +137,29 @@
 
     // Task 5
     //    Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
-    let firstName = 'Anna '
-    let middleName = 'Oleksandrivna'
+
+    let firstNamee = 'Anna '
+    let middleNamee = 'Oleksandrivna'
     let lastName = ' Oprysk'
-    let person = (firstName + middleName + lastName);
+    let person = (firstNamee + middleNamee + lastName);
     console.log(person);
 
     // Task 6
     //  За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
-
-    let age = 33
-    // prompt  (firstName);
-    // alert (middleName);
-    // confirm(age);
-
-    // Task 7
     //  Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
-    console.log(`Вітаю ${firstName}${middleName}. Тобі ${age} років.`)
+    let firstName = prompt(`Введіть ваше ім'я`);
+    console.log(firstName);
+    let middleName = prompt(`Введіть ваше по-батькові`);
+    console.log(middleName);
+    let age = prompt(`Скільки тобі років?`);
+    console.log(age);
 
-    // Task 8
+
+    console.log(`Вітаю`, firstName + middleName,`Тобі ${age} років.`);
+
+
+    // Task 7
     //    За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 
     let a = 100;
@@ -166,7 +169,7 @@
     console.log(typeof b);
     console.log(typeof c);
 
-    //    Task 9
+    //    Task 8
     //     Визначити відповідний оператор в виразах що б вийшов відповідний результат.
     //     В однакових виразах не використовувати однакові оператори!!!
     //     5 ? 6 -> true
@@ -193,7 +196,7 @@
     console.log(123 === '123');
     console.log(123 == 123);
 
-    // Task 10
+    // Task 9
     //     Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
     let str = "20";
     let z = 5;
