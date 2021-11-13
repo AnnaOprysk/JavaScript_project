@@ -47,16 +47,17 @@
     // У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
     // Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
 
-    // let test = 0;
-    // if (test === true){
-    //     console.log("Вірно")
-    // } else {
-    //     console.log("Невірно")
-    // }
+    let test = 0;
+    if (!test){
+        console.log("Вірно")
+    } else {
+        console.log("Невірно")
+    }
 
 
-    // let test = !!0 ? true : false;
-    // console.log(test);
+    let test = confirm('Виберіть ваш варіант');
+    test ? alert("Невірно") : alert("Вірно");
+
 
 
 
