@@ -23,20 +23,17 @@
     // }
 
 
-
-
     // Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
     // Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
 
-   /* let l = +prompt("first number");
-    let k = +prompt("first number");
-    let m = +prompt("first number");
-    result = (l > k && m < k) ? 'k-is in the middle' : (k > l && m < l) ? 'l-is in the middle' : 'm-is in the middle';
-        console.log(result);*/
+    let l = +prompt("first number");
+    let k = +prompt("second number");
+    let m = +prompt("third number");
+    result = ((k > l && k < m) || (k < l && k > m)) ? 'k-is in the middle' : ((l > k && l < m) || (l < k && l > m)) ? 'l-is in the middle' : ((m > k && m < l) || (m < k && m > l)) ? 'm-is in the middle' : 'the numbers are equal';
+    console.log(result);
 
 
-
-        // Перепишіть конструкцію if з використанням умовного оператора '?':
+    // Перепишіть конструкцію if з використанням умовного оператора '?':
     // let result;
     // // if (a + b < 4) {
     // //     result = 'Мало';
@@ -49,8 +46,6 @@
     // let b = 2;
     // result = (a + b < 4 )? 'Мало' : 'Багато';
     // console.log(result);
-
-
 
 
     //  Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
