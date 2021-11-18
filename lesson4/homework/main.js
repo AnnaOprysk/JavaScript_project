@@ -35,17 +35,13 @@
 
 // створити функцію яка приймає масив та виводить кожен його елемент
 
-// let arrow = ['yes', 'no', 23, 33, 'hellow', 'logo', 'increase'];
-// function showArrow (){
-//     document.write(arrow[0]+ "<br>");
-//     document.write(arrow[1]+ "<br>");
-//     document.write(arrow[2]+ "<br>");
-//     document.write(arrow[3]+ "<br>");
-//     document.write(arrow[4]+ "<br>");
-//     document.write(arrow[5]+ "<br>");
-//     document.write(arrow[6]+ "<br>");
-// }
-// showArrow();
+let arrow = ['yes', 'no', 23, 33, 'hellow', 'logo', 'increase'];
+function showArrow (){
+    for (let arrowElement of arrow) {
+        document.write(arrowElement+ "<br>");
+    }
+}
+showArrow();
 
 
 // створити функцію яка створює параграф з текстом. Текст задати через аргумент
@@ -97,9 +93,10 @@
 // showArrowUl();
 
 
+
 //  створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 //  Для кожного об'єкту окремий блок.
-//
+
 // let arrow = [
 //     {
 //         id: 3356778,
@@ -123,9 +120,7 @@
 //     }
 // ];
 // function showArrowWithObjects() {
-//     // for (let i = 0; i < arrow.length; i++) {
-//     //     document.write({arrow})
-//     // }
+//
 //     for (let arrowElement of arrow) {
 //         document.write(`<div>${arrowElement.id}, ${arrowElement.name}, ${arrowElement.age}</div>`)
 //     }
