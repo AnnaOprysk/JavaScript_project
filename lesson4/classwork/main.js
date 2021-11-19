@@ -30,8 +30,8 @@
 
 // - створити функцію яка повертає найбільше число з масиву
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function maxNumber() {
+
+// function maxNumber(array) {
 //     let max = array[0];
 //     for (const number of array) {
 //         if (number > max) {
@@ -41,13 +41,14 @@
 //     return max;
 // }
 //
-// console.log(maxNumber());
+// console.log(maxNumber([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
+
 
 
 // - створити функцію яка повертає найменьше число з масиву
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function minNumber() {
+
+// function minNumber(array ) {
 //     let min = array[0];
 //     for (const number of array) {
 //         if (number < min) {
@@ -57,7 +58,7 @@
 //     return min;
 // }
 //
-// console.log(minNumber());
+// console.log(minNumber([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
 
 
 
@@ -65,22 +66,22 @@
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 // Приклад [1,2,10]->13
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function sumArray() {
+
+// function sumArray(array) {
 //     let result =0;
 //     for (let i = 0; i < array.length; i++) {
 //         result+= array[i];
 //     }
 //     return result;
 // }
-// console.log(sumArray());
+// console.log(sumArray([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
 
 
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function middleOfArray() {
+
+// function middleOfArray(array) {
 //     let result = 0;
 //     for (let i = 0; i < array.length; i++) {
 //         result+= array[i]/array.length;
@@ -88,14 +89,14 @@
 //     return Math.round(result);
 // }
 //
-// console.log(middleOfArray());
+// console.log(middleOfArray([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
 
 
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function minMaxFunction() {
+
+// function minMaxFunction(array) {
 //     let min = array[0];
 //     let max = array[0];
 //     for (const arrayElement of array) {
@@ -110,7 +111,7 @@
 //     return min;
 // }
 //
-// minMaxFunction();
+// minMaxFunction([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]);
 
 
 // - створити функцію яка заповнює масив рандомними числами
@@ -144,8 +145,8 @@
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
-// let array = [23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678];
-// function reverseArray() {
+
+// function reverseArray(array) {
 //     let array2 = [];
 //     for (let i = array.length - 1; i >= 0; i--) {
 //         array2.push (array[i]);
@@ -153,4 +154,4 @@
 //     return array2;
 // }
 //
-// console.log(reverseArray());
+// console.log(reverseArray([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
