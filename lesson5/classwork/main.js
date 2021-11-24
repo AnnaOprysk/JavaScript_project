@@ -81,9 +81,9 @@ console.log(sumArray([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
 let middleOfArray = array => {
     let result = 0;
     for (let i = 0; i < array.length; i++) {
-        result += array[i] / array.length;
+        result += array[i] ;
     }
-    return Math.round(result);
+    return Math.round(result/array.length);
 };
 
 console.log(middleOfArray([23, 45, 6, 77, 90, 234, 12, 1, 9, 50, 22, 5, 678]));
