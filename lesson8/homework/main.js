@@ -36,14 +36,18 @@ divText.style.color = "blue";
 
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 
-let list = document.getElementById("rules");
-console.log(list);
+// let list = document.getElementById("rules");
+// console.log(list);
+
+let getElementByIdRules = document.getElementById("rules");
+
+console.log(getElementByIdRules.classList)
 
 
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 
 
-let tagUl= document.getElementsByTagName("ul");
+let tagUl = document.getElementsByTagName("ul");
 for (const element of tagUl) {
     element.style.color = "darkred";
     console.log(element);
