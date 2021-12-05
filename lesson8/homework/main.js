@@ -5,11 +5,11 @@
 // -- отримує текст з параграфа з id "content"
 
 let pText = document.getElementById("content");
-console.log(pText);
+console.log(pText.textContent);
 
 // -- отримує текст з блоку з id "rules"
 let divText = document.getElementById("rules");
-console.log(divText);
+console.log(divText.textContent);
 
 // -- замініть текст параграфа з id 'content' на будь-який інший
 
