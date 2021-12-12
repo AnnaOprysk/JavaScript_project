@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>favorites</title>
+</head>
+<body>
+
+<div>
+    My favorites:
+    <div class="fav"></div>
+</div>
+
+
+<script>
+    let divFav = document.getElementsByClassName('fav')[0];
+    let users = JSON.parse(localStorage.getItem('favorites'));
+    for (const user of users) {
+        let div = document.createElement('div');
+        div.innerText = JSON.stringify(user);
+        divFav.append(div);
+    }
+</script>
+</body>
+</html>
