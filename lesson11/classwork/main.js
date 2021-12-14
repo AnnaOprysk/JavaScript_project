@@ -16,7 +16,7 @@ let users = [
 // Створити сторніку favorites.html при переході на яку потрібно вивест в документ всіх обраних на попередньому етапі.
 
 
-let newArray = [];
+
 for (const user of users) {
     let div = document.createElement('div');
     div.innerText = user.name + ',' + user.age + ',' + user.status;
