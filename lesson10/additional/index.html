@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>additional</title>
+</head>
+
+<style>
+    .container {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .header {
+        background-color: skyblue;
+        height: 30px;
+    }
+
+    .mainbox {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 7px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .block {
+        color: white;
+        font-size: 19px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .twoblocks, .twoblocks2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+    }
+
+    .first {
+        background-color: plum;
+        height: 120px;
+        width: 150px;
+    }
+
+    .second {
+        background-color: yellowgreen;
+        height: 190px;
+        width: 150px;
+    }
+
+    .third {
+        display: flex;
+        flex-direction: column;
+        background-color: gold;
+        height: 220px;
+        width: 242px;
+    }
+
+    .text {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .fourth {
+        background-color: grey;
+        height: 90px;
+        width: 242px;
+    }
+
+    .endbox {
+        display: flex;
+        column-gap: 7px;
+    }
+
+    .endbox__block1 {
+        background-color: forestgreen;
+        height: 70px;
+        width: 280px;
+    }
+
+    .endbox__block2 {
+        background-color: lightpink;
+        width: 112px;
+    }
+
+    .footer {
+        background-color: goldenrod;
+        height: 30px;
+        margin-top: 7px;
+    }
+    .popup{
+        width:300px ;
+        height:200px ;
+        top: 10px;
+        transition: 1s;
+        position: absolute;
+        background-color:lightblue ;
+    }
+.show-popup{
+    position: relative;
+    top: 50px;
+}
+
+</style>
+<body>
+
+
+<div id="wrap" class="container">
+
+    <div id="head" class="header block"> Header</div>
+    <div class="mainbox">
+        <div class="twoblocks">
+            <div class="first block"> Hero</div>
+            <div class="second  block"> Sidebar</div>
+        </div>
+        <div class="twoblocks2">
+            <div id="third" class="third block"> Main content
+                <span class="text">
+                    **if things do not look right, make sure your browser is in "Experimental Mode"
+                </span>
+            </div>
+            <div id="fourth" class="fourth block"> Extra content</div>
+        </div>
+    </div>
+    <div class="endbox">
+        <div class="endbox__block1 block"> Related Images</div>
+        <div class="endbox__block2 block"> Related Posts</div>
+    </div>
+    <div id="foot" class="footer block"> Footer</div>
+    <div class="popup show-popup"></div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
