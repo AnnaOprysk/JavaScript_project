@@ -1,0 +1,103 @@
+.wrapper {
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.userDiv {
+    width: 800px;
+    border: 5px double steelblue;
+    text-align: center;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+}
+.buttonUser {
+    background-color:  #6488a8;
+    border-radius: 7px;
+    width: 180px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.currentUser {
+    margin: 10px 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 25px;
+    font-weight: 520;
+    box-shadow: lightsteelblue;
+}
+.buttonPosts {
+    width: 90%;
+    height: 35px;
+    margin: 20px 0 20px 0;
+    background-color: steelblue;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.divAllPosts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 80px;
+}
+.divOnePost {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightsteelblue;
+    width: 310px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid steelblue;
+    padding: 15px 10px 15px 10px;
+}
+.postInfoButton {
+    background-color: #6488a8;
+    border-radius: 5px;
+    height: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.divPost {
+    margin-left: 50px;
+    font-size: 23px;
+}
+.buttonComments {
+    width: 400px;
+    height: 40px;
+    background-color: steelblue;
+    font-size: 17px;
+    font-weight: 700;
+    margin:20px 0 20px 0 ;
+    border-radius: 6px;
+}
+.divAllComments {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 50px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.divComment {
+    width: 420px;
+    height: 300px;
+    font-size: 20px;
+    background-color: lightsteelblue;
+    border-radius: 7px;
+    border: 2px solid steelblue;
+    padding-left: 8px;
+}

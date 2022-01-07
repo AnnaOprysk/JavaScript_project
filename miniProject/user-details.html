@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user-details</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<style>
+
+</style>
+<body>
+
+
+<script>
+
+const urlParams = new URLSearchParams(window.location.search);
+const userDetailsParams = urlParams.get('User_Id');
+
+fetch(`https://jsonplaceholder.typicode.com/users/${userDetailsParams}`)
+    .then(user => user.json())
+    .then(user => {
+
+        let currentUser = document.createElement('div')
+        currentUser.classList.add('currentUser');
+        let fullName = document.createElement('h2');
+        let userName = document.createElement('div');
+        let email = document.createElement('div');
+        let address = document.createElement('div');
+        let phone = document.createElement('div');
+        let website = document.createElement('div');
+        let company = document.createElement('div');
+        let buttonPosts = document.createElement('button');
+        buttonPosts.classList.add('buttonPosts');
+
+        fullName.innerText = `${user.id}.  ${user.name}`;
+        userName.innerText = `username: ${user.username}`;
+        email.innerText = `email: ${user.email}`;
+        address.innerText = `address: ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode},
+        geolocation: lat ${user.address.geo.lat}, lng ${user.address.geo.lng}`;
+        phone.innerText = `phone: ${user.email}`;
+        website.innerText = `website: ${user.email}`;
+        company.innerText=`Company: ${user.company.name}, catchPhrase: ${user.company.catchPhrase},
+         bs: ${user.company.bs}`
+        buttonPosts.innerText = 'Posts of current user';
+
+        currentUser.append(fullName, userName, email, address,phone,website,company, buttonPosts);
+        document.body.append(currentUser);
+
+
+        buttonPosts.addEventListener('click', klickFunction);
+        function klickFunction(){
+            fetch(`https://jsonplaceholder.typicode.com/users/${userDetailsParams}/posts`)
+                .then(value => value.json())
+                .then(value => {
+                    let divAllPosts = document.createElement('div');
+                    divAllPosts.classList.add('divAllPosts');
+                    document.body.append(divAllPosts);
+
+                    for (const post of value) {
+                        let divOnePost = document.createElement('h3');
+                        divOnePost.classList.add('divOnePost');
+                        divOnePost.innerText = `${post.id}.  ${post.title}`;
+                        let postInfoButton = document.createElement('button');
+                        postInfoButton.innerText = 'Show more post information'
+                        postInfoButton.classList.add('postInfoButton');
+                        postInfoButton.onclick = function () {
+                            location.href = `http://localhost:63342/JavaScript_project/miniProject/post-details.html?Post_Id=${post.id}`;
+                        }
+                        divOnePost.append(postInfoButton);
+                        divAllPosts.append(divOnePost);
+                    }
+
+                    buttonPosts.removeEventListener('click', klickFunction);
+                });
+        }
+    });
+
+
+</script>
+</body>
+</html>
