@@ -40,7 +40,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
             buttonUser.classList.add('buttonUser');
             buttonUser.innerText = 'Show user';
             buttonUser.onclick = function () {
-                location.href=`http://localhost:63342/JavaScript_project/miniProject/user-details.html?User_Id=${user.id}`;
+                let myPort = window.location.port;
+                location.href=`http://localhost:${myPort}/JavaScript_project/miniProject/user-details.html?User_Id=${user.id}`;
             };
 
             idUser.innerText = user.id;
